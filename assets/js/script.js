@@ -38,6 +38,10 @@ async function postForm(e) {
                 results += `column <span class="column">${error.col}</span></div>`;
                 results += `<div class="error">${error.error}</div>`;
             }
+
+            document.getElementById("resultsModalTitle").innerText = heading;
+            document.getElementById("results-content").innerHTML = results;
+            resultsModal.show();
         }
 
         
